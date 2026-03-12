@@ -15,7 +15,7 @@ while choice =='y' or choice =='Y' : # make 'Y' valid too
         
         flag = True # huh this seems inverted
         for i in range(len(operators)): # indexing range fix
-            a, b, op = numbers[i-1], numbers[i+1], operators[i]
+            a, b, op = numbers[i], numbers[i+1], operators[i] # note indexing fix for a = numbers[i]
             # correct the ops
             match op:
                 case '+':
