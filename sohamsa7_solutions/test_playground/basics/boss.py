@@ -1,6 +1,6 @@
 choice = 'y'
 
-while choice =='y': # make 'Y' valid too
+while choice.lower() =='y': # make 'Y' valid too
     try:
         # typecast the below 2 to a lis
         numbers =list(input("Enter the input numbers separated by spaces: ").split())
@@ -49,7 +49,7 @@ while choice =='y': # make 'Y' valid too
 # u might wanna find a special function in python
 #alternate code
 #COMMENT OUT THE ABOVE CODE IF YOU WANT TO EXECUTE ALTERNATE CODE!!!
-while choice=='y':
+while choice.lower() =='y':
     try:
         exp=(input('enter expression in one line: '))
         print('Output:', eval(exp))
