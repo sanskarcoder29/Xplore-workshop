@@ -31,6 +31,7 @@ jobs:
           repository: Once-1296/CoC-workshop-test-runner
           token: ${{ secrets.GRADER_REPO_TOKEN }}
           path: grader_repo
+          persist-credentials: false # Add this to prevent token leakage/mixing
       # validate cloned Repo
       - name: Validate Cloned Repo
         run: |
